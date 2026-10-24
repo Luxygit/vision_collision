@@ -3,7 +3,6 @@ import cv2
 
 
 def main() -> None:
-    print(getattr(cv2, "__version__", "no version"))
     detector = CameraDetector()
     while True:
         success, frame, categorised = detector.get_frame_detections()
